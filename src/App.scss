@@ -35,12 +35,22 @@ ul {
 .footer-col-2 {
   padding-top: 2em;
   width: 60%;
+  flex-grow: 1;
   justify-content: space-between;
   padding-left: 4em;
 }
 .footer-header-links {
   text-decoration: underline;
 }
+.footer-link-col {
+  min-width: 200px;
+  flex-grow: 1;
+}
+// @media screen and (max-width: 1200px){
+//   .footer-col-2{
+//     width: 100;
+//   }
+// }
 // Text Styles Global
 .small-txt {
   font-size: 12px;
@@ -58,5 +68,14 @@ ul > li > a {
   color: unset;
   :hover {
     color: unset;
+  }
+}
+@media screen and (max-width: "1300px") {
+  .navlinks {
+    display: none !important;
+  }
+  .hamburger {
+    display: block !important;
+    height: fit-content;
   }
 }

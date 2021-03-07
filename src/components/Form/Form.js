@@ -102,3 +102,7 @@ const Form = () => {
 };
 
 export default Form;
+
+// Could have refactored the input fields and made them reusable as
+// components but that would make further complications downn the line
+// when we are validating data and holding states in them so i kept it simple

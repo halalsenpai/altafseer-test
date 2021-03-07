@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "../../Assets/Logo Black Text.png";
 import { Link } from "react-router-dom";
+import "../../App.scss";
+import hbtn from "../../Assets/square.png";
 
 const Navbar = () => {
   return (
@@ -18,7 +20,11 @@ const Navbar = () => {
           <Link className="navlink">Services</Link>
           <Link className="navlink">Pricing</Link>
         </div>
-        <div>
+
+        <div className="d-flex">
+          {/* <div style={{ display: "none" }} className="hamburger btn">
+            <img style={{ height: "30px" }} src={hbtn} alt="" />
+          </div> */}
           <div className="btn mr-3">Login</div>
           <div className="btn sign-up-btn">Sign up</div>
         </div>

@@ -8,9 +8,19 @@ const Footer = () => {
   return (
     <>
       <footer className="footer bg-white text-muted">
-        <div className="d-flex container-fluid " style={{ width: "92vw" }}>
-          <div className="d-flex flex-column justify-content-around footer-col-1">
-            <img style={{ maxWidth: "426px" }} src={logo} alt="logo2x" />
+        <div
+          className="d-flex flex-wrap "
+          style={{ width: "92vw", margin: "0 auto" }}
+        >
+          <div
+            style={{ minWidth: "400px", flexGrow: "1" }}
+            className="d-flex flex-column justify-content-around footer-col-1"
+          >
+            <img
+              style={{ minWidth: "300px", maxWidth: "426px" }}
+              src={logo}
+              alt="logo2x"
+            />
             <p>
               Jobsmideast.com is the smartest job site in the middle east. Our
               amazing team consists of some of the most experiecned and talented
@@ -27,7 +37,7 @@ const Footer = () => {
               <img src={bookdemobtn} alt="bookdemobtn" />
             </div>
           </div>
-          <div className="d-flex footer-col-2">
+          <div className="d-flex footer-col-2 flex-wrap">
             <div className="footer-link-col">
               <Link className="text-success font-weight-bold footer-header-links">
                 Site Map

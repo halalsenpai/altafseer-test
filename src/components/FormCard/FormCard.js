@@ -39,7 +39,7 @@ const FormCard = () => {
     <>
       <div
         className="position-absolute btn"
-        style={{ top: "50%", left: "6em" }}
+        style={{ top: "50%", left: "6rem" }}
       >
         <img src={backBtn} alt="" />
       </div>
